@@ -1,10 +1,11 @@
+import 'react-native-gesture-handler';
 
 import { StyleSheet, Text, View } from 'react-native'
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>hola mundo</Text>
+      <Text style={styles.text}>Chicago's instite of art</Text>
     </View>
   )
 }
@@ -18,5 +19,8 @@ const styles = StyleSheet.create({
     color: "white",
     justifyContent: "center",
     alignItems: "center"
+  },
+  text: {
+    fontSize: 22
   }
 })
