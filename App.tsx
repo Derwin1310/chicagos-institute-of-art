@@ -1,26 +1,14 @@
-import 'react-native-gesture-handler';
+import { NavigationContainer } from "@react-navigation/native";
 
-import { StyleSheet, Text, View } from 'react-native'
+import { StackNavigation } from "./src/nagivators"
 
 const App = () => {
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Chicago's instite of art</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigation />
+    </NavigationContainer>
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#444",
-    color: "white",
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  text: {
-    fontSize: 22
-  }
-})
